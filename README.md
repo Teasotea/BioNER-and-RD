@@ -1,2 +1,2 @@
-# Token-Classification-for-Bio-articles
-Token Classification for BioArticles
+# Token Classification for Bio Articles
+Token Classification for Bio Articles
