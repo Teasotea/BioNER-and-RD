@@ -1,2 +1,2 @@
-# Token Classification for Bio Articles
+# Token Classification and Relation Detection
 Token Classification for Bio Articles
