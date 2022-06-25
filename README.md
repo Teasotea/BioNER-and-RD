@@ -2,7 +2,7 @@
 Token Classification and Relation Detection for Bio Articles
 
 ## Task
-Solve tokens classification problems on biological articles and use the resulting model in another task - extraction of relations between named entities. Train a model to correctly predict the class of entity and then use the given model to find chemical-disease relations on this data set.
+Tokens classification problems on biological articles and use the resulting model in another task - extraction of relations between named entities. Entities are `Chemical` and `Disease`. Train a model to correctly predict the class of entity and then use the given model to find chemical-disease relations on this data set.
 
 ## Notebooks
 * [`Parser.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Parser.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/Parser.ipynb)) -  Parsing and Pre-Processing data
