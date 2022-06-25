@@ -1,6 +1,9 @@
 # Token Classification and Relation Detection
 Token Classification and Relation Detection for Bio Articles
 
+## Task
+Solve tokens classification problems on biological articles and use the resulting model in another task - extraction of relations between named entities. Train a model to correctly predict the class of entity and then use the given model to find chemical-disease relations on this data set.
+
 ## Notebooks
 * [`Parser.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Parser.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/Parser.ipynb)) -  Parsing and Pre-Processing data
 * [`IOB_converter.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/IOB_converter.ipynb)([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/IOB_converter.ipynb)) - Convertation dataset to the IOB format (inside, outside, beginning) - common tagging format for tagging tokens
@@ -10,13 +13,5 @@ Token Classification and Relation Detection for Bio Articles
 * [`KnowledgeGraphs.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/KnowledgeGraphs.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/KnowledgeGraphs.ipynb)) - Trying out Relation Extraction methods without usage of NER Entities. Developing functions for further building of Knowledge Graphs and visualizaing th results.
 [`RelationExtractionBetweenEntities.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/RelationExtractionBetweenEntities.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/RelationExtractionBetweenEntities.ipynb)) - This work is unfinished. Futher steps will be to develop functions for extracting entity pairs in given text and the relation between them. This could be done in similar way with approch in `KnowledgeGraphs.ipynb` notebook.
 
-
-
-## Notebooks
-* [`Parser.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Parser.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/Parser.ipynb)) -  Parsing and Pre-Processing Data
-* [`IOB_converter.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/IOB_converter.ipynb)([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/IOB_converter.ipynb)) - Convertation dataset to the IOB format (inside, outside, beginning) - common tagging format for tagging tokens
-* [`TokenClassification.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/TokenClassification.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/TokenClassification.ipynb)) -  Finetuning `bert-base-cased`, `scibert-scivocab-cased` and `biobert-v1.1-pubmed-base-cased model` on dataset in IOB format. Comparing the results. Metrics: F1-score, precision, recall, accuracy, support
-* [`Scibert_TokenClassification.ipyn`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb)) -  Hyperparameters Tuning for `scibert-scivocab-cased` as it was shown the best performance among other models. Developing functions for extracting entities from user's text and visualizing results with `displacy`
-* [`KnowledgeGraphs.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/KnowledgeGraphs.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/KnowledgeGraphs.ipynb)) - Trying out Relation Extraction methods without usage of NER Entities. Developing functions for further building Knowledge Graphs and visualizing th results.
-[`RelationExtractionBetweenEntities.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/RelationExtractionBetweenEntities.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/RelationExtractionBetweenEntities.ipynb)) - This work is unfinished. Further steps will be to develop functions for extracting entity pairs in given text and the relation between them. This could be done similarly with approch in then `KnowledgeGraphs.ipynb` notebook.
+## Results
 
