@@ -15,11 +15,15 @@ Tokens classification problems on biological articles and use the resulting mode
 
 ## Results
 
+### Picture 1: Comparison of label prediction for entities of three models with the right labels
 ![`Comparison of label prediction for entities of three models with the right labels`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/iob.jpg)
 
+### Picture 2: Fine-Tuned SciBERT Perfomance
 ![`Fine-Tuned SciBERT Perfomance`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/res2.jpg)
 
+### Picture 3: Extracting Entities from given text
 ![`Extracting Entities Example`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/ent2.jpg)
 
+### Picture 4: Knowledge graph with "is" relation for given data
 ![`Knowledge graph for "is" relation for given data`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/gr2.jpg)
 
