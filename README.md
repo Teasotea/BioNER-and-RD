@@ -5,7 +5,7 @@ Token Classification and Relation Detection for Bio Articles
 Work with tokens classification on biological articles and use the resulting model in another task - extraction of relations between named entities. Entities are `Chemical` and `Disease`. Train a model to correctly predict the class of entity and then use the given model to find chemical-disease relations on this data set.
 
 ## Notebooks
-* [`Parser.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Parser.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/Parser.ipynb)) -  Parsing and Pre-Processing data
+* [`parser.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/parser.py) - parsing .txt files to .csv
 * [`IOB_converter.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/IOB_converter.ipynb)([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/IOB_converter.ipynb)) - Convertation dataset to the IOB format (inside, outside, beginning) - common tagging format for tagging tokens
 * [`TokenClassification.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/TokenClassification.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/TokenClassification.ipynb)) -  Finetuning `bert-base-cased`, `scibert-scivocab-cased` and `biobert-v1.1-pubmed-base-cased model` on dataset in IOB format. Comparing the results
 * [`TokenClassification.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/TokenClassification.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/TokenClassification.ipynb)) -  Finetuning `bert-base-cased`, `scibert-scivocab-cased` and `biobert-v1.1-pubmed-base-cased model` on dataset in IOB format. Comparing the results
