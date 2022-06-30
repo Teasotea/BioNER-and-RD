@@ -4,9 +4,9 @@ Token Classification and Relation Detection for Bio Articles
 ## Task
 Work with tokens classification on biological articles and use the resulting model in another task - extraction of relations between named entities. Entities are `Chemical` and `Disease`. Train a model to correctly predict the class of entity and then use the given model to find chemical-disease relations on this data set.
 
-## Files Description
+## Files & Notebooks
 * [`parser.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/parser.py) - parsing .txt files, feature engineering, converting to .csv
-* [`IOB_converter.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/IOB_converter.ipynb)([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/IOB_converter.ipynb)) - Convertation dataset to the IOB format (inside, outside, beginning) - common tagging format for tagging tokens
+* [`to_iob_converter.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/to_iob_converter.py) - converter to the IOB (Inside–outside–beginning) format - common tagging format for tagging tokens
 * [`TokenClassification.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/TokenClassification.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/TokenClassification.ipynb)) -  Finetuning `bert-base-cased`, `scibert-scivocab-cased` and `biobert-v1.1-pubmed-base-cased model` on dataset in IOB format. Comparing the results
 * [`TokenClassification.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/TokenClassification.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/TokenClassification.ipynb)) -  Finetuning `bert-base-cased`, `scibert-scivocab-cased` and `biobert-v1.1-pubmed-base-cased model` on dataset in IOB format. Comparing the results
 * [`Scibert_TokenClassification.ipyn`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb)) -  Hyperparameters Tuning for `scibert-scivocab-cased` as it was shown the best performance among other models. Developing functions for extracting entities from user's text and visualizing results with `displacy`
