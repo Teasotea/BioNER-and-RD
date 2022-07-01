@@ -4,14 +4,16 @@ Token Classification and Relation Detection for Bio Articles
 ## Task
 Work with tokens classification on biological articles and use the resulting model in another task - extraction of relations between named entities. Entities are `Chemical` and `Disease`. Train a model to correctly predict the class of entity and then use the given model to find chemical-disease relations on this data set.
 
+
 ## Token Classification Approach
 Results of finetunning BERT, SciBERT and BioBERT:
+The precision, recall and f1 score shown in table are macro avg (arithmetic mean) of those metrics for 5 classes: B-Chemical, I-Chemical, B-Disease, I-Disease and O
 
-| Model  | Precision (macro avg) | Recall (macro avg) | F1 Score (macro avg)| Accuracy | 
+| Model  | Description | Precision | Recall | F1 Score | Accuracy | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | 
-| `bert-base-cased` [HuggigFace](https://huggingface.co/bert-base-cased) [GitHub](https://github.com/google-research/bert) [Paper](https://arxiv.org/abs/1810.04805) | 0.83 | 0.70 | 0.76 | 0.95 | 
-| `scibert-scivocab-cased` [GitHub](https://github.com/allenai/scibert) [Paper](https://arxiv.org/pdf/1903.10676.pdf) | 0.86 | 0.77 | 0.81 | 0.96 | 
-| `biobert-v1.1-pubmed-base-cased model` [GitHub](https://github.com/dmis-lab/biobert) [Paper](https://arxiv.org/pdf/1901.08746.pdf) |  0.86 | 0.72 | 0.78 | 0.95 | 
+| `bert-base-cased` | [HuggigFace](https://huggingface.co/bert-base-cased), [GitHub](https://github.com/google-research/bert), [Paper](https://arxiv.org/abs/1810.04805) | 0.83 | 0.70 | 0.76 | 0.95 | 
+| `scibert-scivocab-cased`| [GitHub](https://github.com/allenai/scibert), [Paper](https://arxiv.org/pdf/1903.10676.pdf) | 0.86 | 0.77 | 0.81 | 0.96 | 
+| `biobert-v1.1-pubmed-base-cased model`| [GitHub](https://github.com/dmis-lab/biobert), [Paper](https://arxiv.org/pdf/1901.08746.pdf) |  0.86 | 0.72 | 0.78 | 0.95 | 
 
 
 ## Files & Notebooks
