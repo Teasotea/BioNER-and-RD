@@ -1,5 +1,5 @@
 """
-Extracts features from DNER and CID parts of dataset and creates name-entity pairs for relations
+Extracts features from DNER and CID parts of dataset, returns .csv files with name-entity pairs of related terms
 """
 # Import Libraries
 
