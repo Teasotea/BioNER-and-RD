@@ -26,16 +26,13 @@ SciBERT has shown the best performance on given data, so it was chosen for furth
 
 The final approach with Knowledge Graphs could be found in [`RD_KG_solution.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/RD_KG_solution.ipynb) notebook. Experiments with KG on the given dataset could be found in [`KnowledgeGraphs.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/KnowledgeGraphs.ipynb) notebook. The core idea was to analyze dependencies between words in sentences, extract objects, subjects, and relations, and then use the trained NER model to filter Diseases and Chemicals from them. The resulting .tsv file, that contains relations can be found by [link](https://github.com/Teasotea/BioNER-and-RD/blob/main/data/relations1.tsv). All in all, such approach has some issues, like small numbers of entity1-relation-entity2 triples, that are left after filtering. [Here](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/final_kg.jpg) is the visualization of the resulting Knowledge Graph.
 
-## Visualisations
+## Details of results
 
 ### Picture 1: Label prediction for entities of three models with the right labels on Test Set
 ![`Comparison of label prediction for entities of three models with the right labels`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/iob.jpg)
 
 ### Picture 2: Fine-Tuned SciBERT Metrics
 ![`Fine-Tuned SciBERT Perfomance`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/res2.jpg)
-
-### Picture 3: Knowledge graph with "is" relation for given data
-![`Knowledge graph for "is" relation for given data`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/gr2.jpg)
 
 
 ## Files & Notebooks
