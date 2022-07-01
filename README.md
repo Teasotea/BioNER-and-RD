@@ -28,16 +28,13 @@ The final approach with Knowledge Graphs could be found in [`RD_KG_solution.ipyn
 
 ## Visualisations
 
-### Picture 1: Comparison of label prediction for entities of three models with the right labels
+### Picture 1: Label prediction for entities of three models with the right labels on Test Set
 ![`Comparison of label prediction for entities of three models with the right labels`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/iob.jpg)
 
-### Picture 2: Fine-Tuned SciBERT Perfomance
+### Picture 2: Fine-Tuned SciBERT Metrics
 ![`Fine-Tuned SciBERT Perfomance`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/res2.jpg)
 
-### Picture 3: Extracting Entities from given text
-![`Extracting Entities Example`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/ent3.jpg)
-
-### Picture 4: Knowledge graph with "is" relation for given data
+### Picture 3: Knowledge graph with "is" relation for given data
 ![`Knowledge graph for "is" relation for given data`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/gr2.jpg)
 
 
