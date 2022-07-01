@@ -17,8 +17,13 @@ precision, recall and f1 score shown in the table below are macro avg (arithmeti
 | SciBERT `scibert-scivocab-cased`| 0.86 | 0.77 | 0.81 | 0.96 |  [HuggingFace](https://huggingface.co/allenai/scibert_scivocab_uncased), [GitHub](https://github.com/allenai/scibert), [Paper](https://arxiv.org/pdf/1903.10676.pdf) | 
 | BioBERT `biobert-v1.1-pubmed-base-cased model`| 0.86 | 0.72 | 0.78 | 0.95 | [GitHub](https://github.com/dmis-lab/biobert), [Paper](https://arxiv.org/pdf/1901.08746.pdf) | 
 
-SciBERT has shown the best performance on given data, so it was chosen for further improvements, which could be found in [`Scibert_TokenClassification.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb) notebook
+SciBERT has shown the best performance on given data, so it was chosen for further improvements and visualization of results, which could be found in [`Scibert_TokenClassification.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb) notebook.
 
+![`Extracting Entities Example`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/ent3.jpg)
+
+## Knowledge Graphs
+
+## Relation Detection
 
 ## Results
 
