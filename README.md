@@ -4,8 +4,10 @@ Token Classification and Relation Detection for Bio Articles
 ## Task
 Work with tokens classification on biological articles and use the resulting model in another task - extraction of relations between named entities. Entities are `Chemical` and `Disease`. Train a model to correctly predict the class of entity and then use the given model to find chemical-disease relations on this data set.
 
+## Data Preparation
+The first step was data pre-processing and extracting features needed to work with. Python scripts: [`parser.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/parser.py), [`to_iob_converter.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/to_iob_converter.py), [`cid_data_extractor.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/cid_data_extractor.py) were written for that purpose.
 
-## Token Classification Approach
+## Token Classification
 Results of finetuning BERT, SciBERT, and BioBERT:
 precision, recall and f1 score shown in the table below are macro avg (arithmetic mean) of those metrics for 5 classes: **B-Chemical**, **I-Chemical**, **B-Disease**, **I-Disease**, and **O**. Code for this part could be found in [`ModelsForNERComparison.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/ModelsForNERComparison.ipynb) notebook. 
 
