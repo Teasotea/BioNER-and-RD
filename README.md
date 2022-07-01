@@ -17,16 +17,8 @@ precision, recall and f1 score shown in the table below are macro avg (arithmeti
 | SciBERT `scibert-scivocab-cased`| 0.86 | 0.77 | 0.81 | 0.96 |  [HuggingFace](https://huggingface.co/allenai/scibert_scivocab_uncased), [GitHub](https://github.com/allenai/scibert), [Paper](https://arxiv.org/pdf/1903.10676.pdf) | 
 | BioBERT `biobert-v1.1-pubmed-base-cased model`| 0.86 | 0.72 | 0.78 | 0.95 | [GitHub](https://github.com/dmis-lab/biobert), [Paper](https://arxiv.org/pdf/1901.08746.pdf) | 
 
-SciBERT has shown the best performance on given data, so it was chosen for further improvements
+SciBERT has shown the best performance on given data, so it was chosen for further improvements, which could be found in [`Scibert_TokenClassification.ipyn`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb) notebook
 
-## Files & Notebooks
-* [`parser.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/parser.py) - parsing .txt files, feature engineering, converting to .csv
-* [`to_iob_converter.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/to_iob_converter.py) - converter to the IOB (Inside–outside–beginning) format - common tagging format for tagging tokens
-* [`cid_data_extractor.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/cid_data_extractor.py) - extracting related name-entity pairs from DNER and CID parts of the datasets
-* [`ModelsForNERComparison.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/ModelsForNERComparison.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/ModelsForNERComparison.ipynb)) -  Finetuning `bert-base-cased`, `scibert-scivocab-cased` and `biobert-v1.1-pubmed-base-cased model` on dataset in IOB format. Comparing the results
-* [`Scibert_TokenClassification.ipyn`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb)) -  Hyperparameters Tuning for `scibert-scivocab-cased` as it was shown the best performance among other models. Developing functions for extracting entities from user's text and visualizing results with `displacy`
-* [`KnowledgeGraphs.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/KnowledgeGraphs.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/KnowledgeGraphs.ipynb)) - Trying out Relation Extraction methods without usage of NER Entities. Developing functions for further building of Knowledge Graphs and visualizaing th results.
-* [`RelationExtractionBetweenEntities.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/RelationExtractionBetweenEntities.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/RelationExtractionBetweenEntities.ipynb)) - This work is unfinished. Futher steps will be to develop functions for extracting entity pairs in given text and the relation between them. This could be done in similar way with approch in `KnowledgeGraphs.ipynb` notebook.
 
 ## Results
 
@@ -42,3 +34,12 @@ SciBERT has shown the best performance on given data, so it was chosen for furth
 ### Picture 4: Knowledge graph with "is" relation for given data
 ![`Knowledge graph for "is" relation for given data`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/gr2.jpg)
 
+
+## Files & Notebooks
+* [`parser.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/parser.py) - parsing .txt files, feature engineering, converting to .csv
+* [`to_iob_converter.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/to_iob_converter.py) - converter to the IOB (Inside–outside–beginning) format - common tagging format for tagging tokens
+* [`cid_data_extractor.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/cid_data_extractor.py) - extracting related name-entity pairs from DNER and CID parts of the datasets
+* [`ModelsForNERComparison.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/ModelsForNERComparison.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/ModelsForNERComparison.ipynb)) -  Finetuning `bert-base-cased`, `scibert-scivocab-cased` and `biobert-v1.1-pubmed-base-cased model` on dataset in IOB format. Comparing the results
+* [`Scibert_TokenClassification.ipyn`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb)) -  Further work with `scibert-scivocab-cased` as it has shown the best performance among other models. Developing functions for extracting entities from user's text and visualizing results with `displacy`
+* [`KnowledgeGraphs.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/KnowledgeGraphs.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/KnowledgeGraphs.ipynb)) - Trying out Relation Extraction methods without usage of NER Entities. Developing functions for further building of Knowledge Graphs and visualizaing th results.
+* [`RelationExtractionBetweenEntities.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/RelationExtractionBetweenEntities.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/RelationExtractionBetweenEntities.ipynb)) - This work is unfinished. Futher steps will be to develop functions for extracting entity pairs in given text and the relation between them. This could be done in similar way with approch in `KnowledgeGraphs.ipynb` notebook.
