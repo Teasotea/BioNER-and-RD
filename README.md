@@ -19,8 +19,7 @@ precision, recall and f1 score shown in the table below are macro avg (arithmeti
 | SciBERT `scibert-scivocab-cased`| 0.86 | 0.77 | 0.81 | 0.96 |  [HuggingFace](https://huggingface.co/allenai/scibert_scivocab_uncased), [GitHub](https://github.com/allenai/scibert), [Paper](https://arxiv.org/pdf/1903.10676.pdf) | 
 | BioBERT `biobert-v1.1-pubmed-base-cased model`| 0.86 | 0.72 | 0.78 | 0.95 | [GitHub](https://github.com/dmis-lab/biobert), [Paper](https://arxiv.org/pdf/1901.08746.pdf) | 
 
-SciBERT has shown the best performance on given data, so it was chosen for further improvements and visualization of results, which could be found in [`Scibert_TokenClassification.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb) notebook.
-
+SciBERT has shown the best performance on given data, so it was chosen for further improvements and visualization of results, which could be found in [`Scibert_TokenClassification.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb) notebook. The SciBERT model was also finetuned with SpaCy pipelines in [`Finetuning_SciBERT_with_SpaCy_Pipeline.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Finetuning%20SciBERT%20with%20SpaCy%20Pipeline.ipynb) notebook for more comfortable further usage.
 
 
 ## Knowledge Graphs
@@ -50,5 +49,6 @@ The final approach with Knowledge Graphs could be found in [`RD_KG_solution.ipyn
 * [`cid_data_extractor.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/cid_data_extractor.py) - extracting related name-entity pairs from DNER and CID parts of the datasets
 * [`ModelsForNERComparison.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/ModelsForNERComparison.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/ModelsForNERComparison.ipynb)) -  Finetuning `bert-base-cased`, `scibert-scivocab-cased` and `biobert-v1.1-pubmed-base-cased model` on dataset in IOB format. Comparing the results
 * [`Scibert_TokenClassification.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb)) -  Further work with `scibert-scivocab-cased` as it has shown the best performance among other models. Developing functions for extracting entities from user's text and visualizing results with `displacy`
+* [`Finetuning_SciBERT_with_SpaCy_Pipeline.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Finetuning%20SciBERT%20with%20SpaCy%20Pipeline.ipynb) -  Using [spaCy 3](https://spacy.io/usage/v3) library to finetune SciBERT for NER task with SpaCy Pipeline
 * [`KnowledgeGraphs.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/KnowledgeGraphs.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/KnowledgeGraphs.ipynb)) - Trying out Relation Extraction methods without usage of NER Entities. Developing functions for further building of Knowledge Graphs and visualizaing th results.
 * [`RD_KG_solution.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/RD_KG_solution.ipynb)  - Final approach with Knowledge Graphs
