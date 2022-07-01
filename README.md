@@ -19,7 +19,7 @@ precision, recall and f1 score shown in the table below are macro avg (arithmeti
 
 SciBERT has shown the best performance on given data, so it was chosen for further improvements and visualization of results, which could be found in [`Scibert_TokenClassification.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb) notebook.
 
-![`Extracting Entities Example`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/ent3.jpg)
+![`Extracting Entities Example`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/ent2.jpg)
 
 ## Knowledge Graphs
 
