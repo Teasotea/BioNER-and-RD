@@ -23,6 +23,9 @@ SciBERT has shown the best performance on given data, so it was chosen for furth
 
 ## Knowledge Graphs
 
+The final approach with Knowledge Graphs could be found in [`RD_KG_solution.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/RD_KG_solution.ipynb) notebook. Experiments with KG on the given dataset could be found in [`KnowledgeGraphs.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/KnowledgeGraphs.ipynb) notebook. The core idea is to analyze dependencies between words in sentences, extract objects, subjects, and relations, and then use the trained NER model to filter Diseases and Chemicals from them. The resulting .tsv file, that contains relations can be found by [link](https://github.com/Teasotea/BioNER-and-RD/blob/main/data/relations1.tsv). All in all, such approach has some issues, like small numbers of entity1-relation-entity2 triples, that are left after filtering. Thus, it was decided to try other approaches in Relation Extraction. Here is the visualization of the resulting Knowledge Graph:
+![`Knowledge Graph Final`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/final_kg.jpg)
+
 ## Relation Detection
 
 ## Results
@@ -47,4 +50,4 @@ SciBERT has shown the best performance on given data, so it was chosen for furth
 * [`ModelsForNERComparison.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/ModelsForNERComparison.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/ModelsForNERComparison.ipynb)) -  Finetuning `bert-base-cased`, `scibert-scivocab-cased` and `biobert-v1.1-pubmed-base-cased model` on dataset in IOB format. Comparing the results
 * [`Scibert_TokenClassification.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb)) -  Further work with `scibert-scivocab-cased` as it has shown the best performance among other models. Developing functions for extracting entities from user's text and visualizing results with `displacy`
 * [`KnowledgeGraphs.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/KnowledgeGraphs.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/KnowledgeGraphs.ipynb)) - Trying out Relation Extraction methods without usage of NER Entities. Developing functions for further building of Knowledge Graphs and visualizaing th results.
-* [`RelationExtractionBetweenEntities.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/RelationExtractionBetweenEntities.ipynb) ([nbviewer](https://github.com/Teasotea/BioNER-and-RD/blob/main/RelationExtractionBetweenEntities.ipynb)) - This work is unfinished. Futher steps will be to develop functions for extracting entity pairs in given text and the relation between them. This could be done in similar way with approch in `KnowledgeGraphs.ipynb` notebook.
+* [`RD_KG_solution.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/RD_KG_solution.ipynb)  - Final approach with Knowledge Graphs
