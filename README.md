@@ -1,8 +1,9 @@
 # Token Classification and Relation Detection
-Token Classification and Relation Detection for Bio Articles
+Chemicals, diseases, and their relations play central roles in many areas of biomedical research and healthcare such as drug discovery and safety surveillance. Although the ultimate goal in drug discovery is to develop chemicals for therapeutics, recognition of adverse drug reactions between chemicals and diseases is important for improving chemical safety and toxicity studies and facilitating new screening assays for pharmaceutical compound survival. In addition, identification of chemicals as biomarkers can be helpful in informing potential relationships between chemicals and pathologies. More [info](https://biocreative.bioinformatics.udel.edu/tasks/biocreative-v/track-3-cdr/) about the task.
 
 ## Task
-Work with tokens classification on biological articles and use the resulting model in another task - extraction of relations between named entities. Entities are `Chemical` and `Disease`. Train a model to correctly predict the class of entity and then use the given model to find chemical-disease relations on this data set.
+Token Classification and Relation Detection for Bio Articles
+Work with Tokens Classification on biological articles and use the resulting model in another task - Relations Extraction between named entities. Entities are `Chemical` and `Disease`.
 
 ## Data Preparation
 The first step was data pre-processing and extracting features needed to work with. Python scripts: [`parser.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/parser.py), [`to_iob_converter.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/to_iob_converter.py), [`cid_data_extractor.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/cid_data_extractor.py) were written for that purpose. The data could be found in [folder](https://github.com/Teasotea/BioNER-and-RD/tree/main/data)
