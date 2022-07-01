@@ -8,6 +8,8 @@ Work with tokens classification on biological articles and use the resulting mod
 The first step was data pre-processing and extracting features needed to work with. Python scripts: [`parser.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/parser.py), [`to_iob_converter.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/to_iob_converter.py), [`cid_data_extractor.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/cid_data_extractor.py) were written for that purpose. The data could be found in [folder](https://github.com/Teasotea/BioNER-and-RD/tree/main/data)
 
 ## Token Classification
+![`Extracting Entities Example`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/ent2.jpg)
+
 Results of finetuning BERT, SciBERT, and BioBERT:
 precision, recall and f1 score shown in the table below are macro avg (arithmetic mean) of those metrics for 5 classes: **B-Chemical**, **I-Chemical**, **B-Disease**, **I-Disease**, and **O**. For the finetuning task scikit-learn [wrapper](https://github.com/charles9n/bert-sklearn) was used. Code for this part could be found in [`ModelsForNERComparison.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/ModelsForNERComparison.ipynb) notebook. 
 
@@ -19,7 +21,7 @@ precision, recall and f1 score shown in the table below are macro avg (arithmeti
 
 SciBERT has shown the best performance on given data, so it was chosen for further improvements and visualization of results, which could be found in [`Scibert_TokenClassification.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/Scibert_TokenClassification.ipynb) notebook.
 
-![`Extracting Entities Example`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/ent2.jpg)
+
 
 ## Knowledge Graphs
 
