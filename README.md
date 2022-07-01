@@ -34,7 +34,7 @@ SciBERT has shown the best performance on given data, so it was chosen for furth
 ![`Fine-Tuned SciBERT Perfomance`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/res2.jpg)
 
 ### Picture 3: Extracting Entities from given text
-![`Extracting Entities Example`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/ent2.jpg)
+![`Extracting Entities Example`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/ent3.jpg)
 
 ### Picture 4: Knowledge graph with "is" relation for given data
 ![`Knowledge graph for "is" relation for given data`](https://github.com/Teasotea/BioNER-and-RD/blob/main/img/gr2.jpg)
