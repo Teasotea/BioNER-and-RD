@@ -6,8 +6,8 @@ Work with tokens classification on biological articles and use the resulting mod
 
 
 ## Token Classification Approach
-Results of finetunning BERT, SciBERT and BioBERT:
-Precision, recall and f1 score shown in table below are macro avg (arithmetic mean) of those metrics for 5 classes: `B-Chemical`, `I-Chemical`, `B-Disease`, `I-Disease` and `O`
+Results of finetuning BERT, SciBERT, and BioBERT:
+Precision, recall and f1 score shown in the table below are macro avg (arithmetic mean) of those metrics for 5 classes: **B-Chemical**, **I-Chemical**, **B-Disease**, **I-Disease**, and **O**
 
 | Model  | Description | Precision | Recall | F1 Score | Accuracy | 
 | ------------- |  ------------- | ------------- | ------------- | ------------- | ------------- | 
