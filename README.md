@@ -9,9 +9,9 @@ Results of finetunning BERT, SciBERT and BioBERT:
 
 | Model  | Precision (macro avg) | Recall (macro avg) | F1 Score (macro avg)| Accuracy | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | 
-| `bert-base-cased` [link](https://huggingface.co/bert-base-cased) | 0.83 | 0.70 | 0.76 | 0.95 | 
-| `scibert-scivocab-cased` [link](https://github.com/allenai/scibert)| Content Cell  | 0.86 | 0.77 | 0.81 | 0.96 | 
-| `biobert-v1.1-pubmed-base-cased model` [link](https://github.com/dmis-lab/biobert) |  0.86 | 0.72 | 0.78 | 0.95 | 
+| `bert-base-cased` [HuggigFace](https://huggingface.co/bert-base-cased) [GitHub](https://github.com/google-research/bert) [Paper](https://arxiv.org/abs/1810.04805) | 0.83 | 0.70 | 0.76 | 0.95 | 
+| `scibert-scivocab-cased` [GitHub](https://github.com/allenai/scibert) [Paper](https://arxiv.org/pdf/1903.10676.pdf) | 0.86 | 0.77 | 0.81 | 0.96 | 
+| `biobert-v1.1-pubmed-base-cased model` [GitHub](https://github.com/dmis-lab/biobert) [Paper](https://arxiv.org/pdf/1901.08746.pdf) |  0.86 | 0.72 | 0.78 | 0.95 | 
 
 
 ## Files & Notebooks
