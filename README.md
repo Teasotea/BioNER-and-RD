@@ -9,7 +9,7 @@ The first step was data pre-processing and extracting features needed to work wi
 
 ## Token Classification
 Results of finetuning BERT, SciBERT, and BioBERT:
-precision, recall and f1 score shown in the table below are macro avg (arithmetic mean) of those metrics for 5 classes: **B-Chemical**, **I-Chemical**, **B-Disease**, **I-Disease**, and **O**. Code for this part could be found in [`ModelsForNERComparison.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/ModelsForNERComparison.ipynb) notebook. 
+precision, recall and f1 score shown in the table below are macro avg (arithmetic mean) of those metrics for 5 classes: **B-Chemical**, **I-Chemical**, **B-Disease**, **I-Disease**, and **O**. For the finetuning task scikit-learn [wrapper](https://github.com/charles9n/bert-sklearn) was used. Code for this part could be found in [`ModelsForNERComparison.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/ModelsForNERComparison.ipynb) notebook. 
 
 | Model  | Precision | Recall | F1 Score | Accuracy | Model Description | 
 | ------------- |  ------------- | ------------- | ------------- | ------------- | ------------- | 
