@@ -7,14 +7,14 @@ Work with tokens classification on biological articles and use the resulting mod
 
 ## Token Classification Approach
 Results of finetuning BERT, SciBERT, and BioBERT:
-Precision, recall and f1 score shown in the table below are macro avg (arithmetic mean) of those metrics for 5 classes: **B-Chemical**, **I-Chemical**, **B-Disease**, **I-Disease**, and **O**
+Precision, recall and f1 score shown in the table below are macro avg (arithmetic mean) of those metrics for 5 classes: **B-Chemical**, **I-Chemical**, **B-Disease**, **I-Disease**, and **O**. Code for this part could be found in [`ModelsForNERComparison.ipynb`](https://github.com/Teasotea/BioNER-and-RD/blob/main/ModelsForNERComparison.ipynb) notebook. 
 
 | Model  | Description | Precision | Recall | F1 Score | Accuracy | 
 | ------------- |  ------------- | ------------- | ------------- | ------------- | ------------- | 
 | `bert-base-cased` | [HuggigFace](https://huggingface.co/bert-base-cased), [GitHub](https://github.com/google-research/bert), [Paper](https://arxiv.org/abs/1810.04805) | 0.83 | 0.70 | 0.76 | 0.95 | 
-| `scibert-scivocab-cased`| [GitHub](https://github.com/allenai/scibert), [Paper](https://arxiv.org/pdf/1903.10676.pdf) | 0.86 | 0.77 | 0.81 | 0.96 | 
+| `scibert-scivocab-cased`| [HuggingFace](https://huggingface.co/allenai/scibert_scivocab_uncased), [GitHub](https://github.com/allenai/scibert), [Paper](https://arxiv.org/pdf/1903.10676.pdf) | 0.86 | 0.77 | 0.81 | 0.96 | 
 | `biobert-v1.1-pubmed-base-cased model`| [GitHub](https://github.com/dmis-lab/biobert), [Paper](https://arxiv.org/pdf/1901.08746.pdf) |  0.86 | 0.72 | 0.78 | 0.95 | 
-
+SciBERT has shown the best performance on givendata, so it was chosen for further improvements
 
 ## Files & Notebooks
 * [`parser.py`](https://github.com/Teasotea/BioNER-and-RD/blob/main/parser.py) - parsing .txt files, feature engineering, converting to .csv
